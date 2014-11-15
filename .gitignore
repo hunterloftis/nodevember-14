@@ -1,3 +1,4 @@
 /node_modules
 services/*
 npm-debug.log
+!services/template.js
