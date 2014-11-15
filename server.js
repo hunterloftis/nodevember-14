@@ -4,7 +4,7 @@ var cpus = require('os').cpus().length;
 var logger = require('logfmt');
 var jackrabbit = require('jackrabbit');
 
-var web = require('./web');
+var web = require('./lib/web');
 
 var RABBIT_URL = process.env.CLOUDAMQP_URL || 'amqp://localhost';
 var PORT = process.env.PORT || 5000;

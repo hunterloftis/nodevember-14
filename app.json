@@ -1,0 +1,27 @@
+{
+  "name": "Nodevember Demo",
+  "description": "Production architectural ideas",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "success_url": "/",
+  "keywords": [
+    "node",
+    "express",
+    "production",
+    "nodevember",
+    "microservices"
+  ],
+  "scripts": {
+    "postdeploy": "echo 'restarting'"
+  },
+  "addons": [
+    "cloudamqp",
+    "blitz",
+    "logentries",
+    "papertrail",
+    "librato",
+    "nodetime",
+    "newrelic:stark"
+  ],
+  "env": {
+  }
+}
