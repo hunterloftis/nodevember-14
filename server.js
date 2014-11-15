@@ -8,6 +8,7 @@ var web = require('./lib/web');
 
 var RABBIT_URL = process.env.CLOUDAMQP_URL || 'amqp://localhost';
 var PORT = process.env.PORT || 5000;
+var SERVICE_TIME = process.env.SERVICE_TIME || 1000;
 
 throng(start, { workers: cpus, lifetime: Infinity });
 
@@ -21,7 +22,7 @@ function start() {
   process.on('SIGTERM', exit);
 
   function listen() {
-    var app = web(broker);
+    var app = web(broker, SERVICE_TIME);
     server = http.createServer(app)
     server.listen(PORT);
   }
