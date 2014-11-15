@@ -10,15 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.10.2",
-    "forecast": "^0.2.1",
     "jackrabbit": "^3.0.5",
     "jade": "^1.7.0",
     "logfmt": "^1.2.0",
     "throng": "^1.0.0",
-    "weather": "^0.1.0",
-    "weather-js": "^1.0.0",
-    "weather.js": "0.0.2",
-    "wundernode": "^0.4.0"
+    "weather-js": "^1.0.0"
   },
   "engines": {
     "node": "0.11.x"
