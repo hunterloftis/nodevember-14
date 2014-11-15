@@ -11,7 +11,7 @@
   "dependencies": {
     "express": "^4.10.2",
     "forecast": "^0.2.1",
-    "jackrabbit": "^3.0.2",
+    "jackrabbit": "^3.0.5",
     "jade": "^1.7.0",
     "logfmt": "^1.2.0",
     "throng": "^1.0.0",
