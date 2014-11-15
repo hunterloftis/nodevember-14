@@ -2,6 +2,9 @@
 
 ## Production Node Architecture
 
-1. Clone this repository
-2. `export CLOUDAMQP_URL=amqp://wwncrdep:GMBZdpBXAb2ywuI4pm_KIWyRA6Bd1sB3@silver-toad.rmq.cloudamqp.com/wwncrdep`
-3. Run your service, eg: `node services/weather`
+```
+git clone https://github.com/hunterloftis/nodevember-14.git
+cd nodevember-14
+export CLOUDAMQP_URL=amqp://wwncrdep:GMBZdpBXAb2ywuI4pm_KIWyRA6Bd1sB3@silver-toad.rmq.cloudamqp.com/wwncrdep
+node services/weather
+```
