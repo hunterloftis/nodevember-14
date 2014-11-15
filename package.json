@@ -1,0 +1,22 @@
+{
+  "name": "nodevember",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.2",
+    "forecast": "^0.2.1",
+    "jackrabbit": "^3.0.2",
+    "logfmt": "^1.2.0",
+    "throng": "^1.0.0",
+    "weather": "^0.1.0",
+    "weather-js": "^1.0.0",
+    "weather.js": "0.0.2",
+    "wundernode": "^0.4.0"
+  }
+}
