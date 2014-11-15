@@ -17,7 +17,7 @@ function start() {
   var server, broker = jackrabbit(RABBIT_URL, 1);
 
   broker.once('connected', listen);
-  broker.once('disconnected', exit);
+  broker.once('disconnected', exit.bind(this, 'disconnected'));
   process.on('SIGTERM', exit);
 
   function listen() {
@@ -26,8 +26,8 @@ function start() {
     server.listen(PORT);
   }
 
-  function exit() {
-    logger.log({ type: 'info', message: 'closing server' });
+  function exit(reason) {
+    logger.log({ type: 'info', message: 'closing server', reason: reason });
     if (server) server.close(process.exit.bind(process));
     else process.exit();
   }
