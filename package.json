@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.10.2",
-    "jackrabbit": "^3.0.6",
+    "jackrabbit": "^3.0.7",
     "jade": "^1.7.0",
     "logfmt": "^1.2.0",
     "throng": "^1.0.0",
